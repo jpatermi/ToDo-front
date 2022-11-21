@@ -1,7 +1,6 @@
-import React from "react";
 import { Task } from "./Task";
 
-export const TaskList = ({ tasks, onComplete, onDelete }) => {
+export const TaskList = ({ tasks, onComplete, onDelete, isLoading, idTaskSelected }) => {
     return (
         <div>
             <ul style={{ listStyle: 'none', padding: 0 }}>
@@ -10,6 +9,8 @@ export const TaskList = ({ tasks, onComplete, onDelete }) => {
                         <li key={ task.id }>
                             <Task
                                 task={ task }
+                                isLoading={ isLoading }
+                                idTaskSelected={ idTaskSelected }
                                 onComplete={ onComplete }
                                 onDelete={ onDelete }
                             />
