@@ -2,7 +2,7 @@
 
 ## Install
 
-1. Clone repository `https://github.com/jpatermi/ToDo-front`
+1. Clone repository `https://github.com/jpatermi/ToDo-front.git`
 2. copy `.env.example` and rename to `.env`
 3. Change value to variable `REACT_APP_API_URL` if necessary
 4. run `npm install`
